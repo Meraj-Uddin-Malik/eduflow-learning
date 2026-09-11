@@ -9,4 +9,6 @@ const student = {
 
 student.feePaid = false;
 student.age = 15;
+
+delete student.age;
 console.log(student) // Output: { stdName: 'John Doe', className: '10th Grade', feePaid: false }
