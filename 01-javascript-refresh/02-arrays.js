@@ -14,3 +14,10 @@ console.log(classes); // Output: ["Primary 0", "Early Stages 1", "Early Stages 2
 
 classes.shift();
 console.log(classes); // Output: ["Early Stages 1", "Early Stages 2", "Early Stages 3", "Primary 1", "Primary 2", "Primary 3", "Primary 4", "Primary 5", "Primary 6"]
+
+console.log(classes.includes("Primary 3")); // Output: true
+console.log(classes.includes("Secondary 2")); // Output: false
+
+console.log(classes.indexOf("Primary 4")); // Output: 6
+console.log(classes.indexOf("Secondary 2")); // Output: -1
+
