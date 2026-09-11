@@ -21,3 +21,13 @@ console.log(classes.includes("Secondary 2")); // Output: false
 console.log(classes.indexOf("Primary 4")); // Output: 6
 console.log(classes.indexOf("Secondary 2")); // Output: -1
 
+classes[3] = "Primary 1A"; // This will change the value of the element at index 3 to "Primary 1A"
+console.log(classes); // Output: ["Early Stages 1", "Early Stages 2", "Early Stages 3", "Primary 1A", "Primary 2", "Primary 3", "Primary 4", "Primary 5", "Primary 6"]
+
+const primaryClasses = classes.slice(3, 9); // This will create a new array with the elements from index 3 to 8
+console.log(primaryClasses); // Output: ["Primary 1A", "Primary 2", "Primary 3", "Primary 4", "Primary 5", "Primary 6"]
+
+classes.splice(3, 3, "Primary 1B", "Primary 2B", "Primary 3B"); // This will remove 3 elements from index 3 and add "Primary 1B", "Primary 2B", "Primary 3B" in their place
+console.log(classes); // Output: ["Early Stages 1", "Early Stages 2", "Early Stages 3", "Primary 1B", "Primary 2B", "Primary 3B", "Primary 4", "Primary 5", "Primary 6"]
+
+console.log(classes.join(", ")); // Output: "Early Stages 1, Early Stages 2, Early Stages 3, Primary 1B, Primary 2B, Primary 3B, Primary 4, Primary 5, Primary 6"
